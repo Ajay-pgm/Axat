@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+<div>
+    {% include 'Home.html' %}
+</div>
+<div class="container">
+<h1>welcome  {{user}}</h1>
+</div>
+
+ <form method="post" enctype="multipart/form-data" class="form-control" style="background-color:#b6e8f0">
+        {% csrf_token %}
+           {{images.as_p}}
+     <h1>hello</h1>
+        <input type="submit" value="upload">
+    </form>
+{{data}}
+</body>
+</html>
